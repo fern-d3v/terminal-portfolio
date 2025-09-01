@@ -40,6 +40,16 @@ const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
       <Head>
         <title>{config.title}</title>
         <meta name="description" content="fern_d3v — a terminal-style portfolio by Rhyn Hilt. Full‑stack learner building web apps, game dev experiments, and CLI tools." />
+        <meta property="og:title" content="fern_d3v — terminal portfolio" />
+        <meta property="og:description" content="Terminal-style portfolio by Rhyn Hilt. Full‑stack learner building web apps, game dev experiments, and CLI tools." />
+        <meta property="og:url" content="https://fernd3v.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://fernd3v.vercel.app/assets/apple-icon-180x180.png" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="fern_d3v — terminal portfolio" />
+        <meta name="twitter:description" content="Terminal-style portfolio by Rhyn Hilt. Full‑stack learner building web apps, game dev experiments, and CLI tools." />
+        <meta name="twitter:site" content="@fern_d3v" />
+        <meta name="twitter:image" content="https://fernd3v.vercel.app/assets/apple-icon-180x180.png" />
       </Head>
 
       <div className="p-8 overflow-hidden h-full border-2 rounded border-light-yellow dark:border-dark-yellow">
