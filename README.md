@@ -1,3 +1,5 @@
+<img alt="demo" src="https://fernd3v.vercel.app/assets/demo.gif">
+
 # fern_d3v — Terminal Portfolio
 
 A terminal-style portfolio built with Next.js, tailored for my personal site. Type help to discover commands, or just start exploring.
