@@ -1,39 +1,37 @@
 {
-  "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "LiveTerm",
-  "name": "John Doe",
-  "ascii": "liveterm",
+  "title": "fern_dev",
+  "name": "Rhyn Hilt",
+  "ascii": "fern_d3v",
   "social": {
-    "github": "github",
-    "linkedin": "linkedin"
+    "github": "fern-d3v",
+    "linkedin": "rhyn-hilt",
+    "twitter": "fern_d3v"
   },
-  "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
-  "ps1_username": "visitor",
-  "repo": "https://github.com/Cveinnt/LiveTerm",
-  "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
+  "email": "rhynhilt@gmail.com",
+  "ps1_hostname": "fern_d3v",
+  "ps1_username": "guest",
+  "repo": "https://github.com/fern-d3v/terminal-portfolio",
   "donate_urls": {
-    "paypal": "https://paypal.me/cveinnt",
-    "patreon": "https://patreon.com/cveinnt"
+    "ko-fi": "https://ko-fi.com/fernd3v"
   },
   "colors": {
-    "light": {
-      "background": "#FBF1C9",
-      "foreground": "#3C3836",
-      "yellow": "#D79921",
-      "green": "#98971A",
-      "gray": "#7C6F64",
-      "blue": "#458588",
-      "red": "#CA2124"
-    },
-    "dark": {
-      "background": "#2E3440",
-      "foreground": "#E5E9F0",
-      "yellow": "#5E81AC",
-      "green": "#A3BE8C",
-      "gray": "#88C0D0",
-      "blue": "#EBCB8B",
-      "red": "#BF616A"
+      "light": {
+        "background": "#282936",  
+        "foreground": "#E9E9F4",
+        "yellow": "#00F769",
+        "green": "#EBFF87",
+        "gray": "#626483",
+        "blue": "#62D6E8",
+        "red": "#EA51B2"
+      },
+       "dark": {
+      "background": "#282a36",
+      "foreground": "#999999",
+      "yellow": "#FFFBB8",
+      "green": "#91CA91",
+      "gray": "#C3B1E1",
+      "blue": "#00e0e0",
+      "red": "#f95678"
     }
   }
 }

@@ -14,10 +14,10 @@ export const help = async (args: string[]): Promise<string> => {
       c += Object.keys(bin).sort()[i - 1] + ' ';
     }
   }
-  return `Welcome! Here are all the available commands:
+  return `Salutations! Here are all the available commands:
 \n${c}\n
 [tab]: trigger completion.
-[ctrl+l]/clear: clear terminal.\n
+[ctrl+l]: clear terminal.\n
 Type 'sumfetch' to display summary.
 `;
 };
@@ -30,25 +30,37 @@ export const repo = async (args: string[]): Promise<string> => {
 
 // About
 export const about = async (args: string[]): Promise<string> => {
-  return `Hi, I am ${config.name}. 
-Welcome to my website!
+  return `
+  <div class="about-output">
+  <h2 class="text-2xl"><strong>About Me</strong></h2>
+  <p>Hey! I'm Rhyn Hilt (they/them), though you'll find me online as <strong>fern_d3v</strong>.</p>
+
+  <p>I started my coding journey about two months ago and it's been an incredible ride. Currently, I'm diving deep into <strong>full-stack web development</strong>, exploring <strong>game development</strong>, and building <strong>CLI tools</strong>. There's something deeply satisfying about creating things that actually work and solve real problems, and bring joy to others.</p>
+
+  <h2 class="mt-4 text-xl"><strong>What I'm Building</strong></h2>
+  <p>I've built several CLI projects that I'm genuinely proud of, and I maintain a monthly blog called <strong>"console.log"</strong> where I document my learning process, share discoveries, and occasionally talk about the real life struggles of working and learning to code at the same time.</p>
+
+  <h2 class="mt-4 text-xl"><strong>When I'm Not Coding</strong></h2>
+  <p>You'll find me absorbed in a fantasy novel (Brandon Sanderson’s Cosmere is my favorite), getting thoroughly challenged by whatever Souls game I'm currently playing, or listening to music (I'm all over the place with metal, K-pop, and dubstep, but honestly I'll vibe with just about anything), or enjoying a TTRPG session. My cat has appointed himself as quality assurance, specializing in keyboard inspections at the most critical moments.</p>
+
+  <p>I really enjoy problem-solving, whether it's debugging complex code, optimizing a character build for a tough Souls boss fight, or helping figure out how to get the party out of whatever chaotic situation we've found ourselves in this week.</p>
+
+  <h2 class="mt-4 text-xl"><strong>Let's Connect</strong></h2>
+  <p>Always down to chat with fellow developers, gamers, or really anyone who's into solving cool problems. Feel free to browse my projects or hit me up, I'd love to hear what you're working on.</p>
+
 More about me:
 'sumfetch' - short summary.
 'resume' - my latest resume.
-'readme' - my github readme.`;
+'readme' - my github readme.
+  </div>`;
 };
 
-export const resume = async (args: string[]): Promise<string> => {
-  window.open(`${config.resume_url}`);
-  return 'Opening resume...';
-};
 
 // Donate
 export const donate = async (args: string[]): Promise<string> => {
   return `thank you for your interest. 
 here are the ways you can support my work:
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
+- ☕ <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls['ko-fi']}" target="_blank">ko-fi</a></u>
 `;
 };
 
@@ -70,26 +82,6 @@ export const linkedin = async (args: string[]): Promise<string> => {
   return 'Opening linkedin...';
 };
 
-// Search
-export const google = async (args: string[]): Promise<string> => {
-  window.open(`https://google.com/search?q=${args.join(' ')}`);
-  return `Searching google for ${args.join(' ')}...`;
-};
-
-export const duckduckgo = async (args: string[]): Promise<string> => {
-  window.open(`https://duckduckgo.com/?q=${args.join(' ')}`);
-  return `Searching duckduckgo for ${args.join(' ')}...`;
-};
-
-export const bing = async (args: string[]): Promise<string> => {
-  window.open(`https://bing.com/search?q=${args.join(' ')}`);
-  return `Wow, really? You are using bing for ${args.join(' ')}?`;
-};
-
-export const reddit = async (args: string[]): Promise<string> => {
-  window.open(`https://www.reddit.com/search/?q=${args.join(' ')}`);
-  return `Searching reddit for ${args.join(' ')}...`;
-};
 
 // Typical linux commands
 export const echo = async (args: string[]): Promise<string> => {
@@ -101,54 +93,27 @@ export const whoami = async (args: string[]): Promise<string> => {
 };
 
 export const ls = async (args: string[]): Promise<string> => {
-  return `a
-bunch
-of
-fake
-directories`;
+  return `no directories to show at this time.`;
 };
 
 export const cd = async (args: string[]): Promise<string> => {
-  return `unfortunately, i cannot afford more directories.
-if you want to help, you can type 'donate'.`;
+  return `where are you going?`;
 };
 
 export const date = async (args: string[]): Promise<string> => {
   return new Date().toString();
 };
 
-export const vi = async (args: string[]): Promise<string> => {
-  return `woah, you still use 'vi'? just try 'vim'.`;
-};
-
-export const vim = async (args: string[]): Promise<string> => {
-  return `'vim' is so outdated. how about 'nvim'?`;
-};
-
-export const nvim = async (args: string[]): Promise<string> => {
-  return `'nvim'? too fancy. why not 'emacs'?`;
-};
-
-export const emacs = async (args?: string[]): Promise<string> => {
-  return `you know what? just use vscode.`;
-};
-
-export const sudo = async (args?: string[]): Promise<string> => {
-  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
-  return `Permission denied: with little power comes... no responsibility? `;
-};
 
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-█████        ███                       ███████████                                   
-░░███        ░░░                       ░█░░░███░░░█                                   
- ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
- ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
- ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
- ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
- ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
-░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
+███████╗███████╗██████╗ ███╗   ██╗          ██████╗ ███████╗██╗   ██╗
+██╔════╝██╔════╝██╔══██╗████╗  ██║          ██╔══██╗██╔════╝██║   ██║
+█████╗  █████╗  ██████╔╝██╔██╗ ██║          ██║  ██║█████╗  ██║   ██║
+██╔══╝  ██╔══╝  ██╔══██╗██║╚██╗██║          ██║  ██║██╔══╝  ╚██╗ ██╔╝
+██║     ███████╗██║  ██║██║ ╚████║ ███████╗ ██████╔╝███████╗ ╚████╔╝ 
+╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚══════╝ ╚═════╝ ╚══════╝  ╚═══╝  
 
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.

@@ -1,12 +1,13 @@
 import React from 'react';
 import '../styles/global.css';
 import Head from 'next/head';
+import type { AppProps } from 'next/app';
 
-const App = ({ Component, pageProps }) => {
+const App = ({ Component, pageProps }: AppProps) => {
   const inputRef = React.useRef<HTMLInputElement>(null);
 
   const onClickAnywhere = () => {
-    inputRef.current.focus();
+  inputRef.current?.focus();
   };
 
   return (
@@ -14,9 +15,8 @@ const App = ({ Component, pageProps }) => {
       <Head>
         <meta
           name="viewport"
-          content="initial-scale=1.0, width=device-width"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
           key="viewport"
-          maximum-scale="1"
         />
       </Head>
 
@@ -25,6 +25,7 @@ const App = ({ Component, pageProps }) => {
         onClick={onClickAnywhere}
       >
         <main className="bg-light-background dark:bg-dark-background w-full h-full p-2">
+          {/* Pass inputRef to pages that expect it */}
           <Component {...pageProps} inputRef={inputRef} />
         </main>
       </div>

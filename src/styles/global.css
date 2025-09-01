@@ -3,13 +3,15 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Hack';
-  src: url(/assets/fonts/Hack-NF.ttf);
-  display: swap;
+  font-family: 'JetBrains Mono Nerd';
+  src: url(/assets/fonts/JetBrainsMonoNerd-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 * {
-  font-family: 'Hack', monospace;
+  font-family: 'JetBrains Mono Nerd', monospace;
 }
 
 html,
@@ -20,6 +22,24 @@ div#__next > div {
   height: 100%;
   overflow: auto;
 }
+
+/* Tighter spacing and wrapping for terminal command outputs */
+.command-output {
+  overflow-wrap: anywhere; /* wrap long strings */
+  word-break: break-word; /* fallback */
+}
+
+/* Scoped tighter spacing for the 'about' command */
+.about-output { line-height: 1; max-width: 65ch; }
+.about-output h1,
+.about-output h2 {line-height: 0.5;}
+.about-output h3,
+.about-output h4,
+.about-output h5,
+.about-output h6 { margin: 0.25rem 0; line-height: 1.25; }
+.about-output p { margin: 0.25rem 0; line-height: 1.75; }
+.about-output ul,
+.about-output ol { margin: 0.25rem 0 0.25rem 1rem; }
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -32,10 +52,10 @@ div#__next > div {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ebdbb2;
+  background: #b2e3eb;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff8037;
+  background: #f95678;
 }

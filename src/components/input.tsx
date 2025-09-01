@@ -4,7 +4,21 @@ import { shell } from '../utils/shell';
 import { handleTabCompletion } from '../utils/tabCompletion';
 import { Ps1 } from './Ps1';
 
-export const Input = ({
+type HistoryEntry = { command: string };
+
+interface InputProps {
+  inputRef: React.MutableRefObject<HTMLInputElement | null>;
+  containerRef: React.MutableRefObject<HTMLDivElement | null>;
+  command: string;
+  history: Array<HistoryEntry>;
+  lastCommandIndex: number;
+  setCommand: React.Dispatch<React.SetStateAction<string>>;
+  setHistory: (value: string) => void;
+  setLastCommandIndex: React.Dispatch<React.SetStateAction<number>>;
+  clearHistory: () => void;
+}
+
+export const Input: React.FC<InputProps> = ({
   inputRef,
   containerRef,
   command,
@@ -16,7 +30,7 @@ export const Input = ({
   clearHistory,
 }) => {
   const onSubmit = async (event: React.KeyboardEvent<HTMLInputElement>) => {
-    const commands: [string] = history
+    const commands: string[] = history
       .map(({ command }) => command)
       .filter((command: string) => command);
 
@@ -37,11 +51,11 @@ export const Input = ({
       handleTabCompletion(command, setCommand);
     }
 
-    if (event.key === 'Enter' || event.code === '13') {
+    if (event.key === 'Enter') {
       event.preventDefault();
       setLastCommandIndex(0);
       await shell(command, setHistory, clearHistory, setCommand);
-      containerRef.current.scrollTo(0, containerRef.current.scrollHeight);
+      containerRef.current?.scrollTo?.(0, (containerRef.current as any).scrollHeight ?? 0);
     }
 
     if (event.key === 'ArrowUp') {
