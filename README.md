@@ -97,5 +97,8 @@ Originally based on LiveTerm by Cveinnt: https://github.com/Cveinnt/LiveTerm
 
 This fork customizes the palette, content, and asset layout for my personal site.
 
+## Extra Tools
+[ASCII Art Generator](https://www.asciiart.eu/image-to-ascii) - I used this to convert my social pfp into ascii art. It gives you a lot of control over the image.
+
 ---
 [![Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/fernd3v)
