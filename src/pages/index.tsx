@@ -39,6 +39,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
     <>
       <Head>
         <title>{config.title}</title>
+        <meta name="description" content="fern_d3v — a terminal-style portfolio by Rhyn Hilt. Full‑stack learner building web apps, game dev experiments, and CLI tools." />
       </Head>
 
       <div className="p-8 overflow-hidden h-full border-2 rounded border-light-yellow dark:border-dark-yellow">
