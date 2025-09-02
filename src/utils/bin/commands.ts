@@ -50,8 +50,6 @@ export const about = async (args: string[]): Promise<string> => {
 
 More about me:
 'sumfetch' - short summary.
-'resume' - my latest resume.
-'readme' - my github readme.
   </div>`;
 };
 
