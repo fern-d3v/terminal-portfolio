@@ -1,3 +1,47 @@
+/* Skills and Next Up icons larger */
+.sumfetch-label .icon {
+  font-size: 2em !important;
+  width: auto !important;
+  margin-left: 0.2em;
+  vertical-align: middle;
+  text-align: left;
+}
+/* Sumfetch custom layout */
+.sumfetch-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2ch;
+  line-height: 5em;
+}
+.sumfetch-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+  line-height: 2em;
+}
+.sumfetch-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.25em;
+  line-height: 1.25;
+}
+.sumfetch-label {
+  margin-left: 0.75em;
+  display: block;
+  margin-left: 1.5em;
+  line-height: 1.25;
+}
+
+.icon {
+  font-size: 1em;
+  vertical-align: middle;
+  width: 0.25em;
+  display: inline-block;
+  text-align: left;
+  line-height: 0.75;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,6 +65,7 @@ div#__next,
 div#__next > div {
   height: 100%;
   overflow: auto;
+  font-size: 15px; /* or any size you prefer */;
 }
 
 /* Tighter spacing and wrapping for terminal command outputs */
@@ -42,12 +87,16 @@ div#__next > div {
 .about-output ol { margin: 0.25rem 0 0.25rem 1rem; }
 
 .description-block {
-  margin: 1em auto;
-  padding: 1em;
-  max-width: 40ch;
-  text-align: center;
+  max-width: 32ch;
+  text-align: left;
   white-space: pre-line;
-  border-radius: 8px;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  line-height: 1.25;
+  margin: 0; /* Remove top margin so flex controls spacing */
+  padding: 0;
+  border-radius: 0;
+  display: block;
 }
 
 ::-webkit-scrollbar {
@@ -67,4 +116,21 @@ div#__next > div {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #f95678;
+}
+
+.sumfetch-row .icon + .description-block,
+.sumfetch-row .icon + .sumfetch-label {
+  margin-left: 1.25em;
+}
+
+.ascii {
+  font-size: 3.6px !important;
+  line-height: 1.2 !important;
+  border: 0.5px solid #f95678 !important;
+  background: transparent !important;
+}
+
+/* Side icons larger */
+.sumfetch-row > .icon {
+  font-size: 2em !important;
 }
