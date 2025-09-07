@@ -8,7 +8,8 @@ const sumfetch = async (args: string[]): Promise<string> => {
 
       const override = `<style>
         .ascii{ font-size:3.6px !important; line-height:1.2 !important; }
-        .ascii{ border:1px solid #f95678 !important; background: transparent !important; }
+        .ascii{ border:0.5px solid #f95678 !important; background: transparent !important; }
+    .icon { font-size: 2em !important; vertical-align: middle; }
       </style>`;
 
       return String.raw`
@@ -16,27 +17,26 @@ const sumfetch = async (args: string[]): Promise<string> => {
           ${override}
           <span>${ascii}</span>
           <div style="white-space:pre; line-height:1.2">
------------
- ABOUT
- ${config.name}
- <u><a href="${config.repo}" target="_blank">Github repo</a></u>
-󱕰 ${config.description}
-󰔟 ${config.currently}
- ${config.skills.join(", ")}
- ${config["next_up"].join(", ")}
-󱉟 ${config.hobbies.join(", ")}
-󰓉 Fun fact: ${config.fun_fact}
 
------------
-󰖸 CONTACT
-󱡰 <u><a href="mailto:${config.email}" target="_blank">${config.email}</a></u>
- <u><a href="https://github.com/${config.social.github}" target="_blank">github - ${config.social.github}</a></u>
- <u><a href="https://linkedin.com/in/${config.social.linkedin}" target="_blank">linkedin - ${config.social.linkedin}</a></u>
- <u><a href="https://x.com/${config.social.twitter}" target="_blank">twitter - ${config.social.twitter}</a></u>
+  <span class="icon"></span> ABOUT
+  <span class="icon"></span> ${config.name}
+  <span class="icon"></span> <u><a href="${config.repo}" target="_blank">Github repo</a></u>
+  <span class="icon">󱕰</span> ${config.description}
+  <span class="icon">󰔟</span> ${config.currently}
+  <span class="icon"></span> ${config.skills.join(', ')}
+  <span class="icon"></span> ${config['next_up'].join(', ')}
+  <span class="icon">󱉟</span> ${config.hobbies.join(', ')}
+  <span class="icon">󰓉</span> Fun fact: ${config.fun_fact}
 
------------
- DONATE
- <u><a href="${config.donate_urls['ko-fi']}" target="_blank">ko-fi - ${config.donate_urls['ko-fi']}</a></u>
+
+  <span class="icon">󰖸</span> CONTACT
+  <span class="icon">󱡰</span> <u><a href="mailto:${config.email}" target="_blank">${config.email}</a></u>
+  <span class="icon"></span> <u><a href="https://github.com/${config.social.github}" target="_blank">github - ${config.social.github}</a></u>
+  <span class="icon"></span> <u><a href="https://linkedin.com/in/${config.social.linkedin}" target="_blank">linkedin - ${config.social.linkedin}</a></u>
+  <span class="icon"></span> <u><a href="https://x.com/${config.social.twitter}" target="_blank">twitter - ${config.social.twitter}</a></u>
+
+  <span class="icon"></span> DONATE
+  <span class="icon"></span> <u><a href="${config.donate_urls['ko-fi']}" target="_blank">ko-fi - ${config.donate_urls['ko-fi']}</a></u>
           </div>
         </div>
       `;
