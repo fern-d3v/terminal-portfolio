@@ -17,20 +17,26 @@ const sumfetch = async (args: string[]): Promise<string> => {
           <span>${ascii}</span>
           <div style="white-space:pre; line-height:1.2">
 -----------
- ABOUT
- ${config.name}
- <u><a href="${config.repo}" target="_blank">Github repo</a></u>
+ ABOUT
+ ${config.name}
+ <u><a href="${config.repo}" target="_blank">Github repo</a></u>
+󱕰 ${config.description}
+󰔟 ${config.currently}
+ ${config.skills.join(", ")}
+ ${config["next up"].join(", ")}
+󱉟 ${config.hobbies.join(", ")}
+󰓉 Fun fact: ${config.fun_fact}
 
 -----------
- CONTACT
- <u><a href="mailto:${config.email}" target="_blank">${config.email}</a></u>
- <u><a href="https://github.com/${config.social.github}" target="_blank">github - ${config.social.github}</a></u>
- <u><a href="https://linkedin.com/in/${config.social.linkedin}" target="_blank">linkedin - ${config.social.linkedin}</a></u>
- <u><a href="https://twitter.com/${config.social.twitter}" target="_blank">twitter - ${config.social.twitter}</a></u>
+󰖸 CONTACT
+󱡰 <u><a href="mailto:${config.email}" target="_blank">${config.email}</a></u>
+ <u><a href="https://github.com/${config.social.github}" target="_blank">github - ${config.social.github}</a></u>
+ <u><a href="https://linkedin.com/in/${config.social.linkedin}" target="_blank">linkedin - ${config.social.linkedin}</a></u>
+ <u><a href="https://x.com/${config.social.twitter}" target="_blank">twitter - ${config.social.twitter}</a></u>
 
 -----------
- DONATE
- <u><a href="${config.donate_urls['ko-fi']}" target="_blank">ko-fi - ${config.donate_urls['ko-fi']}</a></u>
+ DONATE
+ <u><a href="${config.donate_urls['ko-fi']}" target="_blank">ko-fi - ${config.donate_urls['ko-fi']}</a></u>
           </div>
         </div>
       `;
