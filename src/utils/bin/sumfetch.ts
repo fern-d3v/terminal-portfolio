@@ -22,7 +22,7 @@ const sumfetch = async (args: string[]): Promise<string> => {
   <span class="icon"></span> ${config.name}
   <span class="icon"></span> <u><a href="${config.repo}" target="_blank">Github repo</a></u>
   <span class="icon">󱕰</span> ${config.description}
-  <span class="icon">󰔟</span> ${config.currently}
+  <span class="icon"></span> ${config.currently}
   <span class="icon"></span> ${config.skills.join(', ')}
   <span class="icon"></span> ${config['next_up'].join(', ')}
   <span class="icon">󱉟</span> ${config.hobbies.join(', ')}
