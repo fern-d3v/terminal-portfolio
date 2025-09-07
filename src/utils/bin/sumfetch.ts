@@ -23,7 +23,7 @@ const sumfetch = async (args: string[]): Promise<string> => {
 󱕰 ${config.description}
 󰔟 ${config.currently}
  ${config.skills.join(", ")}
- ${config["next up"].join(", ")}
+ ${config["next_up"].join(", ")}
 󱉟 ${config.hobbies.join(", ")}
 󰓉 Fun fact: ${config.fun_fact}
 
