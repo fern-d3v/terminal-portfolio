@@ -1,4 +1,5 @@
 import React from 'react';
+import { BlockCursorInput } from './BlockCursorInput';
 import { commandExists } from '../utils/commandExists';
 import { shell } from '../utils/shell';
 import { handleTabCompletion } from '../utils/tabCompletion';
@@ -98,21 +99,21 @@ export const Input: React.FC<InputProps> = ({
         <Ps1 />
       </label>
 
-      <input
-        ref={inputRef}
+      <BlockCursorInput
         id="prompt"
         type="text"
+        value={command}
+        onChange={onChange}
+        onKeyDown={onSubmit}
+        autoFocus={true}
+        autoComplete="off"
+        spellCheck={false}
         className={`bg-light-background dark:bg-dark-background focus:outline-none flex-grow ${
           commandExists(command) || command === ''
             ? 'text-dark-green'
             : 'text-dark-red'
         }`}
-        value={command}
-        onChange={onChange}
-        autoFocus
-        onKeyDown={onSubmit}
-        autoComplete="off"
-        spellCheck="false"
+        inputRef={inputRef}
       />
     </div>
   );

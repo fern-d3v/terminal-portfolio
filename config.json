@@ -34,9 +34,9 @@
     "Coding",
     "Gaming",
     "Reading",
-    "Traveling",
+    "Cooking",
     "Music",
-    "Photography"
+    "TTRPGs"
   ],
   "colors": {
       "light": {
@@ -50,7 +50,7 @@
       },
        "dark": {
       "background": "#282a36",
-      "foreground": "#999999",
+      "foreground": "#f5f5f5",
       "yellow": "#FFFBB8",
       "green": "#91CA91",
       "gray": "#C3B1E1",

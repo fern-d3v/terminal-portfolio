@@ -47,15 +47,15 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'JetBrains Mono Nerd';
-  src: url(/assets/fonts/JetBrainsMonoNerd-Regular.ttf) format('truetype');
+  font-family: 'DepartureMonoNerdFontMono-Regular';
+  src: url(/assets/fonts/DepartureMonoNerdFontMono-Regular.otf) format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 * {
-  font-family: 'JetBrains Mono Nerd', monospace;
+  font-family: 'DepartureMonoNerdFontMono-Regular', monospace;
 }
 
 html,
@@ -120,17 +120,44 @@ div#__next > div {
 
 .sumfetch-row .icon + .description-block,
 .sumfetch-row .icon + .sumfetch-label {
-  margin-left: 1.25em;
+  margin-left: 1.75em;
 }
 
 .ascii {
   font-size: 3.6px !important;
   line-height: 1.2 !important;
-  border: 0.5px solid #f95678 !important;
+  border: 0.5px solid #fc7f9b !important;
   background: transparent !important;
 }
 
 /* Side icons larger */
 .sumfetch-row > .icon {
   font-size: 2em !important;
+}
+/* Hide default caret for input and textarea */
+input, textarea {
+  caret-color: transparent;
+  position: relative;
+}
+
+/* Block cursor overlay */
+input.block-cursor, textarea.block-cursor {
+  /* No visible caret, handled by JS */
+}
+
+.block-cursor-overlay {
+  position: absolute;
+  pointer-events: none;
+  background: currentColor;
+  width: 0.6em;
+  height: 1.2em;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  animation: blink-cursor 1s steps(1) infinite;
+}
+
+@keyframes blink-cursor {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
 }
