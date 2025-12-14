@@ -3,7 +3,7 @@ import config from '../../config.json';
 
 export const Ps1 = () => {
   return (
-    <div>
+    <span>
       <span className="text-light-yellow dark:text-dark-yellow">
         {config.ps1_username}
       </span>
@@ -12,7 +12,7 @@ export const Ps1 = () => {
         {config.ps1_hostname}
       </span>
       <span className="text-light-gray dark:text-dark-gray">:$ </span>
-    </div>
+    </span>
   );
 };
 
