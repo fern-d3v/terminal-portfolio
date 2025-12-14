@@ -35,10 +35,10 @@ export const about = async (args: string[]): Promise<string> => {
   <h2 class="text-2xl"><strong>About Me</strong></h2>
   <p>Hey! I'm Rhyn Hilt (they/them), though you'll find me online as <strong>fern_d3v</strong>.</p>
 
-  <p>I started my coding journey about two months ago and it's been an incredible ride. Currently, I'm diving deep into <strong>full-stack web development</strong>, exploring <strong>game development</strong>, and building <strong>CLI tools</strong>. There's something deeply satisfying about creating things that actually work and solve real problems, and bring joy to others.</p>
+  <p>I started my coding journey in June of 2025 and it's been an incredible ride. Currently, I'm diving deep into <strong>computer science</strong>, exploring <strong>game development</strong>, and building <strong>CLI tools</strong>. There's something deeply satisfying about creating things that actually work and solve real problems, and bring joy to others.</p>
 
   <h2 class="mt-4 text-xl"><strong>What I'm Building</strong></h2>
-  <p>I've built several CLI projects that I'm genuinely proud of, and I maintain a monthly blog called <strong>"console.log"</strong> where I document my learning process, share discoveries, and occasionally talk about the real life struggles of working and learning to code at the same time.</p>
+  <p>I've built several CLI projects that I'm genuinely proud of, and am learning how to make my own programming language</p>
 
   <h2 class="mt-4 text-xl"><strong>When I'm Not Coding</strong></h2>
   <p>You'll find me absorbed in a fantasy novel (Brandon Sanderson’s Cosmere is my favorite), getting thoroughly challenged by whatever Souls game I'm currently playing, or listening to music (I'm all over the place with metal, K-pop, and dubstep, but honestly I'll vibe with just about anything), or enjoying a TTRPG session. My cat has appointed himself as quality assurance, specializing in keyboard inspections at the most critical moments.</p>
@@ -52,7 +52,6 @@ More about me:
 'sumfetch' - short summary.
   </div>`;
 };
-
 
 // Donate
 export const donate = async (args: string[]): Promise<string> => {
@@ -80,7 +79,6 @@ export const linkedin = async (args: string[]): Promise<string> => {
   return 'Opening linkedin...';
 };
 
-
 // Typical linux commands
 export const echo = async (args: string[]): Promise<string> => {
   return args.join(' ');
@@ -101,7 +99,6 @@ export const cd = async (args: string[]): Promise<string> => {
 export const date = async (args: string[]): Promise<string> => {
   return new Date().toString();
 };
-
 
 // Banner
 export const banner = (args?: string[]): string => {
