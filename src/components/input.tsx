@@ -56,7 +56,10 @@ export const Input: React.FC<InputProps> = ({
       event.preventDefault();
       setLastCommandIndex(0);
       await shell(command, setHistory, clearHistory, setCommand);
-      containerRef.current?.scrollTo?.(0, (containerRef.current as any).scrollHeight ?? 0);
+      containerRef.current?.scrollTo?.(
+        0,
+        (containerRef.current as any).scrollHeight ?? 0,
+      );
     }
 
     if (event.key === 'ArrowUp') {
@@ -95,7 +98,7 @@ export const Input: React.FC<InputProps> = ({
 
   return (
     <div className="flex flex-row space-x-2">
-      <label htmlFor="prompt" className="flex-shrink">
+      <label htmlFor="prompt" className="flex-shrink-0 whitespace-nowrap">
         <Ps1 />
       </label>
 
