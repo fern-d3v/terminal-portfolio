@@ -14,12 +14,14 @@
   "donate_urls": {
     "ko-fi": "https://ko-fi.com/fernd3v"
   },
-  "currently": " Studying full-stack web development with a special interest in the terminal.",
-  "description": " I'm fern_d3v (they/them), a developer exploring full-stack web, game, and CLI dev. I love problem-solving and building joyful, functional things. Outside coding, I'm into fantasy books, Souls-like games, and TTRPGs. Always open to connecting with fellow creators.",
+  "currently": " Studying Computer Science with a special interest in the terminal.",
+  "description": " I'm fern_d3v (they/them), a developer exploring computer science, game, and CLI dev. I love problem-solving and building joyful, functional things. Outside coding, I'm into fantasy books, Souls-like games, and TTRPGs. Always open to connecting with fellow creators.",
   "fun_fact": "I lived in Turkey for a month when I was 19. I still remember a few words in Turkish.",
   "skills": [
+    " ",
     " ",
     " ",
+    " ",
     " ",
     " ",
     " ",
@@ -31,6 +33,7 @@
     " "
   ],
   "hobbies": [
+    "My cat BMO",
     "Coding",
     "Gaming",
     "Reading",
