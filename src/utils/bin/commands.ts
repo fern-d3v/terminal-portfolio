@@ -55,7 +55,7 @@ More about me:
 
 // Donate
 export const donate = async (args: string[]): Promise<string> => {
-  return `thank you for your interest. 
+  return `thank you for your interest.
 here are the ways you can support my work:
 - ☕ <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls['ko-fi']}" target="_blank">ko-fi</a></u>
 `;
@@ -85,11 +85,11 @@ export const echo = async (args: string[]): Promise<string> => {
 };
 
 export const whoami = async (args: string[]): Promise<string> => {
-  return `${config.ps1_username}`;
+  return `philosohpical much?`;
 };
 
 export const ls = async (args: string[]): Promise<string> => {
-  return `no directories to show at this time.`;
+  return `it's not kind to snoop in someone's home.`;
 };
 
 export const cd = async (args: string[]): Promise<string> => {
@@ -107,8 +107,8 @@ export const banner = (args?: string[]): string => {
 ██╔════╝██╔════╝██╔══██╗████╗  ██║          ██╔══██╗██╔════╝██║   ██║
 █████╗  █████╗  ██████╔╝██╔██╗ ██║          ██║  ██║█████╗  ██║   ██║
 ██╔══╝  ██╔══╝  ██╔══██╗██║╚██╗██║          ██║  ██║██╔══╝  ╚██╗ ██╔╝
-██║     ███████╗██║  ██║██║ ╚████║ ███████╗ ██████╔╝███████╗ ╚████╔╝ 
-╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚══════╝ ╚═════╝ ╚══════╝  ╚═══╝  
+██║     ███████╗██║  ██║██║ ╚████║ ███████╗ ██████╔╝███████╗ ╚████╔╝
+╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚══════╝ ╚═════╝ ╚══════╝  ╚═══╝
 
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.
