@@ -4,7 +4,7 @@
 
 A terminal-style portfolio built with Next.js, tailored for my personal site. Type help to discover commands, or just start exploring.
 
-Live: ffyrn.dev
+Live: www.ffyrn.dev
 
 ## Features
 - Terminal UI with command history, tab-completion, and keyboard shortcuts
