@@ -1,10 +1,10 @@
 <img alt="demo" src="https://fernd3v.vercel.app/assets/demo.gif">
 
-# fern_d3v — Terminal Portfolio
+# ffyrnintheforest — Terminal Portfolio
 
 A terminal-style portfolio built with Next.js, tailored for my personal site. Type help to discover commands, or just start exploring.
 
-Live: https://fernd3v.vercel.app/
+Live: ffyrn.dev
 
 ## Features
 - Terminal UI with command history, tab-completion, and keyboard shortcuts
