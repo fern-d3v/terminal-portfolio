@@ -33,7 +33,7 @@ export const about = async (args: string[]): Promise<string> => {
   return `
   <div class="about-output">
   <h2 class="text-2xl"><strong>About Me</strong></h2>
-  <p>Hey! I'm Rhyn Hilt (they/them), though you'll find me online as <strong>fern_d3v</strong>.</p>
+  <p>Hey! I'm Rhyn (they/them), though you'll find me online as <strong>ffyrnintheforest</strong>.</p>
 
   <p>I started my coding journey in June of 2025 and it's been an incredible ride. Currently, I'm diving deep into <strong>computer science</strong>, exploring <strong>game development</strong>, and building <strong>CLI tools</strong>. There's something deeply satisfying about creating things that actually work and solve real problems, and bring joy to others.</p>
 
@@ -103,12 +103,12 @@ export const date = async (args: string[]): Promise<string> => {
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-███████╗███████╗██████╗ ███╗   ██╗          ██████╗ ███████╗██╗   ██╗
-██╔════╝██╔════╝██╔══██╗████╗  ██║          ██╔══██╗██╔════╝██║   ██║
-█████╗  █████╗  ██████╔╝██╔██╗ ██║          ██║  ██║█████╗  ██║   ██║
-██╔══╝  ██╔══╝  ██╔══██╗██║╚██╗██║          ██║  ██║██╔══╝  ╚██╗ ██╔╝
-██║     ███████╗██║  ██║██║ ╚████║ ███████╗ ██████╔╝███████╗ ╚████╔╝
-╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚══════╝ ╚═════╝ ╚══════╝  ╚═══╝
+███████╗███████╗██╗   ██╗██████╗ ███╗   ██╗██╗███╗   ██╗████████╗██╗  ██╗███████╗███████╗ ██████╗ ██████╗ ███████╗███████╗████████╗
+██╔════╝██╔════╝╚██╗ ██╔╝██╔══██╗████╗  ██║██║████╗  ██║╚══██╔══╝██║  ██║██╔════╝██╔════╝██╔═══██╗██╔══██╗██╔════╝██╔════╝╚══██╔══╝
+█████╗  █████╗   ╚████╔╝ ██████╔╝██╔██╗ ██║██║██╔██╗ ██║   ██║   ███████║█████╗  █████╗  ██║   ██║██████╔╝█████╗  ███████╗   ██║   
+██╔══╝  ██╔══╝    ╚██╔╝  ██╔══██╗██║╚██╗██║██║██║╚██╗██║   ██║   ██╔══██║██╔══╝  ██╔══╝  ██║   ██║██╔══██╗██╔══╝  ╚════██║   ██║   
+██║     ██║        ██║   ██║  ██║██║ ╚████║██║██║ ╚████║   ██║   ██║  ██║███████╗██║     ╚██████╔╝██║  ██║███████╗███████║   ██║   
+╚═╝     ╚═╝        ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝      ╚═════╝ ╚═╝  ╚═╝╚══════╝╚══════╝   ╚═╝   
 
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.
