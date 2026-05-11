@@ -7,13 +7,6 @@
   text-align: left;
 }
 /* Sumfetch custom layout */
-.sumfetch-block {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 2ch;
-  line-height: 5em;
-}
 .sumfetch-content {
   width: 100%;
   display: flex;
@@ -121,13 +114,6 @@ div#__next > div {
 .sumfetch-row .icon + .description-block,
 .sumfetch-row .icon + .sumfetch-label {
   margin-left: 1.75em;
-}
-
-.ascii {
-  font-size: 3.6px !important;
-  line-height: 1.2 !important;
-  border: 0.5px solid #fc7f9b !important;
-  background: transparent !important;
 }
 
 /* Side icons larger */
