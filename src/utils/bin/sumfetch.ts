@@ -2,7 +2,7 @@ import config from '../../../config.json';
 
 const sumfetch = async (args: string[]): Promise<string> => {
   try {
-    if (config.ascii === 'fern_d3v') {
+    if (config.ascii === 'ffyrnintheforest') {
       const res = await fetch('/assets/ascii.html');
       const ascii = await res.text();
 
